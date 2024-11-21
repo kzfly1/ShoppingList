@@ -14,7 +14,7 @@ shoppingList.pop();
 console.log("Shopping list after removing the last item:", shoppingList);
 
 /* 
-    Create a function, when the items in shopping list is more than 5, print in console: "Your cart is full." 
+    Create a function, when the items in shopping list are more than 5, print in console: "Your cart is full." 
 */
 
 function cart() {
@@ -31,7 +31,7 @@ cart();
 function isItemInShoppingList(item) {
   const formattedItem = String(item).toLowerCase();
   const exists = shoppingList.some(
-    (item) => item.toLowerCase() === formattedItem
+    item => item.toLowerCase() === formattedItem
   );
 
   return exists
